@@ -8,6 +8,24 @@
   </div>
 </template>
 
+<script>
+import axios from 'axios'
+
+export default {
+  name: 'app',
+  components: {
+    
+  },
+  mounted () {
+    let url = 'https://www.easy-mock.com/mock/5f8e7272aed7a3476f051554/example/restful/:id/list';
+    axios.get(url).then(() => {
+      
+    })
+  }
+}
+
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
