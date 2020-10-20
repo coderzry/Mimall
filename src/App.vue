@@ -1,26 +1,25 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+// import axios from 'axios'
+import jsonp from 'jsonp'
 
 export default {
   name: 'app',
   components: {
     
   },
-  mounted () {
-    let url = 'https://www.easy-mock.com/mock/5f8e7272aed7a3476f051554/example/restful/:id/list';
-    axios.get(url).then(() => {
+  data () {
+    return {
       
-    })
+    }
+  },
+  mounted () {
+    
   }
 }
 
